@@ -1,0 +1,227 @@
+<?xml version="1.0"?>
+<applications>
+    <application name="App1">
+        <rate>1</rate>
+        <usage_percentage>0</usage_percentage> <!-- percentage of devices using this type of applications --> 
+        <max_delay>1000000</max_delay> <!-- latency in seconds -->
+        <container_size>200</container_size> <!--application/container size in kilobytes -->
+        <request_size>200</request_size> <!-- the offloading request that will be sent to the orchestrator and then to the device where the task will be offloaded in kilobytes -->
+        <results_size>200</results_size> <!-- the results of the offlaoded task in kilobytes -->
+        <task_length>-1</task_length> <!--MI: million instructions -->
+        <required_bandwidth>5000</required_bandwidth> <!--required bandwidth, in kbit/s -->
+        <bandwidth_increment>1000</bandwidth_increment> <!--increment of bandwidth, in kbit/s, per user -->
+        <MCU_bandwidth_linear>0.0</MCU_bandwidth_linear> <!-- increment, as a floating point value 0 to no max_float, of bandwidth needed in case of linear increment of MCU.  0: n/a, part m of the function m*x, x = bandwidth{App,k,1} -->
+        <MCU_bandwidth_exponential>1.0</MCU_bandwidth_exponential> <!-- increment, as an integer value, of bandwidth needed in case of exponential increment of MCU. Base of the exponential of the function b^x, x = bandwidth{App,k,1} -->
+        <MCU_bandwidth_linear_standard_deviation> 0.0 </MCU_bandwidth_linear_standard_deviation> <!-- Standard deviation for the bandwidth for a gaussian distribution of costs in case of a linear coefficient. The coefficient is the mean -->
+        <MCU_bandwidth_exponential_standard_deviation> 0.0 </MCU_bandwidth_exponential_standard_deviation> <!-- Standard deviation for the bandwidth for a gaussian distribution of costs in case of an exponential coefficient. The coefficient is the mean -->
+        <required_ram>898</required_ram> <!--required ram, in megabytes -->
+        <ram_increment>675</ram_increment> <!-- increment of ram needed, in megabytes, per user -->
+        <MCU_RAM_linear>0.0</MCU_RAM_linear> <!-- increment, as a floating point value 0 to no max_float, of ram needed in case of linear increment of MCU.  O: n/a, part m of the function m*x, x = RAM{App,k,1} -->
+        <MCU_RAM_exponential>1.0</MCU_RAM_exponential> <!-- increment, as an integer value, of ram needed in case of exponential increment of MCU. 0: n/a, base of the exponential of the function b^x, x = RAM{App,k,1} -->
+        <MCU_RAM_linear_standard_deviation> 0.01 </MCU_RAM_linear_standard_deviation> <!-- Standard deviation for the RAM for a gaussian distribution of costs in case of a linear coefficient. The coefficient is the mean -->
+        <MCU_RAM_exponential_standard_deviation> 0.1 </MCU_RAM_exponential_standard_deviation> <!-- Standard deviation for the RAM for a gaussian distribution of costs in case of an exponential coefficient. The coefficient is the mean -->
+        <required_core>18</required_core>
+        <core_increment>15</core_increment> <!-- increment of cpu core needed, per user -->	
+        <MCU_CPU_linear>0.0</MCU_CPU_linear>  <!-- increment, as a floating point value 0 to no max_float, of cpu core needed in case of linear increment of MCU.  O: n/a, part m of the function mx, x = CPU{App,1,1} -->
+        <MCU_CPU_exponential>1.0</MCU_CPU_exponential> <!-- increment, as an integer value, of cpu core needed in case of exponential increment of MCU ( base of the exponential ). 0: n/a base of the exponential of the function b^x, x = CPU{App,k,1} -->
+        <MCU_CPU_linear_standard_deviation> 0.01 </MCU_CPU_linear_standard_deviation> <!-- Standard deviation for the CPU for a gaussian distribution of costs in case of a linear coefficient. The coefficient is the mean -->
+        <MCU_CPU_exponential_standard_deviation> 0.1 </MCU_CPU_exponential_standard_deviation> <!-- Standard deviation for the CPU for a gaussian distribution of costs in case of an exponential coefficient. The coefficient is the mean -->
+        <max_link_latency>0.08887119583089556</max_link_latency> <!-- max latency from the container of the app to users, in seconds -->	
+    </application>
+    <application name="App2">
+        <rate>1</rate>
+        <usage_percentage>0</usage_percentage> <!-- percentage of devices using this type of applications --> 
+        <max_delay>1000000</max_delay> <!-- latency in seconds -->
+        <container_size>200</container_size> <!--application/container size in kilobytes -->
+        <request_size>200</request_size> <!-- the offloading request that will be sent to the orchestrator and then to the device where the task will be offloaded in kilobytes -->
+        <results_size>200</results_size> <!-- the results of the offlaoded task in kilobytes -->
+        <task_length>-1</task_length> <!--MI: million instructions -->
+        <required_bandwidth>5000</required_bandwidth> <!--required bandwidth, in kbit/s -->
+        <bandwidth_increment>1000</bandwidth_increment> <!--increment of bandwidth, in kbit/s, per user -->
+        <MCU_bandwidth_linear>0.0</MCU_bandwidth_linear> <!-- increment, as a floating point value 0 to no max_float, of bandwidth needed in case of linear increment of MCU.  O: n/a, part m of the function m*x, x = bandwidth{App,k,1} -->
+        <MCU_bandwidth_exponential>1.0</MCU_bandwidth_exponential> <!-- increment, as an integer value, of bandwidth needed in case of exponential increment of MCU. 0: n/a, base of the exponential of the function b^x, x = bandwidth{App,k,1} -->   
+        <MCU_bandwidth_linear_standard_deviation> 0.0 </MCU_bandwidth_linear_standard_deviation> <!-- Standard deviation for the bandwidth for a gaussian distribution of costs in case of a linear coefficient. The coefficient is the mean -->
+        <MCU_bandwidth_exponential_standard_deviation> 0.0 </MCU_bandwidth_exponential_standard_deviation> <!-- Standard deviation for the bandwidth for a gaussian distribution of costs in case of an exponential coefficient. The coefficient is the mean -->
+        <required_ram>763</required_ram> <!--required ram, in megabytes -->
+        <ram_increment>573</ram_increment> <!-- increment of ram needed, in megabytes, per user -->
+        <MCU_RAM_linear>0.0</MCU_RAM_linear> <!-- increment, as a floating point value 0 to no max_float, of ram needed in case of linear increment of MCU.  O: n/a, part m of the function m*x, x = RAM{App,k,1} -->
+        <MCU_RAM_exponential>1.0</MCU_RAM_exponential> <!-- increment, as an integer value, of ram needed in case of exponential increment of MCU. 0: n/a, base of the exponential of the function b^x, x = RAM{App,k,1} -->
+        <MCU_RAM_linear_standard_deviation> 0.01 </MCU_RAM_linear_standard_deviation> <!-- Standard deviation for the RAM for a gaussian distribution of costs in case of a linear coefficient. The coefficient is the mean -->
+        <MCU_RAM_exponential_standard_deviation> 0.1 </MCU_RAM_exponential_standard_deviation> <!-- Standard deviation for the RAM for a gaussian distribution of costs in case of an exponential coefficient. The coefficient is the mean -->
+        <required_core>5</required_core>
+        <core_increment>4</core_increment> <!-- increment of cpu core needed, per user -->
+        <MCU_CPU_linear>0.0</MCU_CPU_linear>  <!-- increment, as a floating point value 0 to no max_float, of cpu core needed in case of linear increment of MCU.  O: n/a, part m of the function mx, x = CPU{App,1,1} -->
+        <MCU_CPU_exponential>1.0</MCU_CPU_exponential> <!-- increment, as an integer value, of cpu core needed in case of exponential increment of MCU ( base of the exponential ). 0: n/a base of the exponential of the function b^x, x = CPU{App,k,1} -->	
+        <MCU_CPU_linear_standard_deviation> 0.01 </MCU_CPU_linear_standard_deviation> <!-- Standard deviation for the CPU for a gaussian distribution of costs in case of a linear coefficient. The coefficient is the mean -->
+        <MCU_CPU_exponential_standard_deviation> 0.1 </MCU_CPU_exponential_standard_deviation> <!-- Standard deviation for the CPU for a gaussian distribution of costs in case of an exponential coefficient. The coefficient is the mean -->
+        <max_link_latency>0.07439168659281747</max_link_latency> <!-- max latency from the container of the app to users, in seconds -->	
+    </application>
+    <application name="App3">
+        <rate>1</rate>
+        <usage_percentage>0</usage_percentage> <!-- percentage of devices using this type of applications --> 
+        <max_delay>1000000</max_delay> <!-- latency in seconds -->
+        <container_size>200</container_size> <!--application/container size in kilobytes -->
+        <request_size>200</request_size> <!-- the offloading request that will be sent to the orchestrator and then to the device where the task will be offloaded in kilobytes -->
+        <results_size>200</results_size> <!-- the results of the offlaoded task in kilobytes -->
+        <task_length>-1</task_length> <!--MI: million instructions -->
+        <required_bandwidth>5000</required_bandwidth> <!--required bandwidth, in kbit/s -->
+        <bandwidth_increment>1000</bandwidth_increment> <!--increment of bandwidth, in kbit/s, per user -->
+        <MCU_bandwidth_linear>0.0</MCU_bandwidth_linear> <!-- increment, as a floating point value 0 to no max_float, of bandwidth needed in case of linear increment of MCU.  O: n/a, part m of the function m*x, x = bandwidth{App,k,1} -->
+        <MCU_bandwidth_exponential>1.0</MCU_bandwidth_exponential> <!-- increment, as an integer value, of bandwidth needed in case of exponential increment of MCU. 0: n/a, base of the exponential of the function b^x, x = bandwidth{App,k,1} -->
+        <MCU_bandwidth_linear_standard_deviation> 0.0 </MCU_bandwidth_linear_standard_deviation> <!-- Standard deviation for the bandwidth for a gaussian distribution of costs in case of a linear coefficient. The coefficient is the mean -->
+        <MCU_bandwidth_exponential_standard_deviation> 0.0 </MCU_bandwidth_exponential_standard_deviation> <!-- Standard deviation for the bandwidth for a gaussian distribution of costs in case of an exponential coefficient. The coefficient is the mean -->
+        <required_ram>833</required_ram> <!--required ram, in megabytes -->
+        <ram_increment>627</ram_increment> <!-- increment of ram needed, in megabytes, per user -->
+        <MCU_RAM_linear>0.0</MCU_RAM_linear> <!-- increment, as a floating point value 0 to no max_float, of ram needed in case of linear increment of MCU.  O: n/a, part m of the function m*x, x = RAM{App,k,1} -->
+        <MCU_RAM_exponential>1.0</MCU_RAM_exponential> <!-- increment, as an integer value, of ram needed in case of exponential increment of MCU. 0: n/a, base of the exponential of the function b^x, x = RAM{App,k,1} -->
+        <MCU_RAM_linear_standard_deviation> 0.01 </MCU_RAM_linear_standard_deviation> <!-- Standard deviation for the RAM for a gaussian distribution of costs in case of a linear coefficient. The coefficient is the mean -->
+        <MCU_RAM_exponential_standard_deviation> 0.1 </MCU_RAM_exponential_standard_deviation> <!-- Standard deviation for the RAM for a gaussian distribution of costs in case of an exponential coefficient. The coefficient is the mean -->
+        <required_core>10</required_core>
+        <core_increment>8</core_increment> <!-- increment of cpu core needed, per user -->
+        <MCU_CPU_linear>0.0</MCU_CPU_linear>  <!-- increment, as a floating point value 0 to no max_float, of cpu core needed in case of linear increment of MCU.  O: n/a, part m of the function mx, x = CPU{App,1,1} -->
+        <MCU_CPU_exponential>1.0</MCU_CPU_exponential> <!-- increment, as an integer value, of cpu core needed in case of exponential increment of MCU ( base of the exponential ). 0: n/a base of the exponential of the function b^x, x = CPU{App,k,1} -->	
+        <MCU_CPU_linear_standard_deviation> 0.01 </MCU_CPU_linear_standard_deviation> <!-- Standard deviation for the CPU for a gaussian distribution of costs in case of a linear coefficient. The coefficient is the mean -->
+        <MCU_CPU_exponential_standard_deviation> 0.1 </MCU_CPU_exponential_standard_deviation> <!-- Standard deviation for the CPU for a gaussian distribution of costs in case of an exponential coefficient. The coefficient is the mean -->
+        <max_link_latency>0.08203198484230084</max_link_latency> <!-- max latency from the container of the app to users, in seconds -->	
+    </application>
+    <application name="App4">
+        <rate>1</rate>
+        <usage_percentage>0</usage_percentage> <!-- percentage of devices using this type of applications --> 
+        <max_delay>1000000</max_delay> <!-- latency in seconds -->
+        <container_size>200</container_size> <!--application/container size in kilobytes -->
+        <request_size>200</request_size> <!-- the offloading request that will be sent to the orchestrator and then to the device where the task will be offloaded in kilobytes -->
+        <results_size>200</results_size> <!-- the results of the offlaoded task in kilobytes -->
+        <task_length>-1</task_length> <!--MI: million instructions -->
+        <required_bandwidth>5000</required_bandwidth> <!--required bandwidth, in kbit/s -->
+        <MCU_bandwidth_linear>0.0</MCU_bandwidth_linear> <!-- increment, as a floating point value 0 to no max_float, of bandwidth needed in case of linear increment of MCU.  O: n/a, part m of the function m*x, x = bandwidth{App,k,1} -->
+        <MCU_bandwidth_exponential>1.0</MCU_bandwidth_exponential> <!-- increment, as an integer value, of bandwidth needed in case of exponential increment of MCU. 0: n/a, base of the exponential of the function b^x, x = bandwidth{App,k,1} -->
+        <MCU_bandwidth_linear_standard_deviation> 0.0 </MCU_bandwidth_linear_standard_deviation> <!-- Standard deviation for the bandwidth for a gaussian distribution of costs in case of a linear coefficient. The coefficient is the mean -->
+        <MCU_bandwidth_exponential_standard_deviation> 0.0 </MCU_bandwidth_exponential_standard_deviation> <!-- Standard deviation for the bandwidth for a gaussian distribution of costs in case of an exponential coefficient. The coefficient is the mean -->
+        <bandwidth_increment>1000</bandwidth_increment> <!--increment of bandwidth, in kbit/s, per user -->
+        <required_ram>466</required_ram> <!--required ram, in megabytes -->
+        <ram_increment>351</ram_increment> <!-- increment of ram needed, in megabytes, per user -->
+        <MCU_RAM_linear>0.0</MCU_RAM_linear> <!-- increment, as a floating point value 0 to no max_float, of ram needed in case of linear increment of MCU.  O: n/a, part m of the function m*x, x = RAM{App,k,1} -->
+        <MCU_RAM_exponential>1.0</MCU_RAM_exponential> <!-- increment, as an integer value, of ram needed in case of exponential increment of MCU. 0: n/a, base of the exponential of the function b^x, x = RAM{App,k,1} -->
+        <MCU_RAM_linear_standard_deviation> 0.01 </MCU_RAM_linear_standard_deviation> <!-- Standard deviation for the RAM for a gaussian distribution of costs in case of a linear coefficient. The coefficient is the mean -->
+        <MCU_RAM_exponential_standard_deviation> 0.1 </MCU_RAM_exponential_standard_deviation> <!-- Standard deviation for the RAM for a gaussian distribution of costs in case of an exponential coefficient. The coefficient is the mean -->
+        <required_core>4</required_core>
+        <core_increment>3</core_increment> <!-- increment of cpu core needed, per user -->
+        <MCU_CPU_linear>0.0</MCU_CPU_linear>  <!-- increment, as a floating point value 0 to no max_float, of cpu core needed in case of linear increment of MCU.  O: n/a, part m of the function mx, x = CPU{App,1,1} -->
+        <MCU_CPU_exponential>1.0</MCU_CPU_exponential> <!-- increment, as an integer value, of cpu core needed in case of exponential increment of MCU ( base of the exponential ). 0: n/a base of the exponential of the function b^x, x = CPU{App,k,1} -->	
+        <MCU_CPU_linear_standard_deviation> 0.01 </MCU_CPU_linear_standard_deviation> <!-- Standard deviation for the CPU for a gaussian distribution of costs in case of a linear coefficient. The coefficient is the mean -->
+        <MCU_CPU_exponential_standard_deviation> 0.1 </MCU_CPU_exponential_standard_deviation> <!-- Standard deviation for the CPU for a gaussian distribution of costs in case of an exponential coefficient. The coefficient is the mean -->
+        <max_link_latency>0.08519788164901484</max_link_latency> <!-- max latency from the container of the app to users, in seconds -->	
+    </application>
+    <application name="App5">
+        <rate>1</rate>
+        <usage_percentage>0</usage_percentage> <!-- percentage of devices using this type of applications --> 
+        <max_delay>1000000</max_delay> <!-- latency in seconds -->
+        <container_size>200</container_size> <!--application/container size in kilobytes -->
+        <request_size>200</request_size> <!-- the offloading request that will be sent to the orchestrator and then to the device where the task will be offloaded in kilobytes -->
+        <results_size>200</results_size> <!-- the results of the offlaoded task in kilobytes -->
+        <task_length>-1</task_length> <!--MI: million instructions -->
+        <required_bandwidth>5000</required_bandwidth> <!--required bandwidth, in kbit/s -->
+        <bandwidth_increment>1000</bandwidth_increment> <!--increment of bandwidth, in kbit/s, per user -->
+        <MCU_bandwidth_linear>0.0</MCU_bandwidth_linear> <!-- increment, as a floating point value 0 to no max_float, of bandwidth needed in case of linear increment of MCU.  O: n/a, part m of the function m*x, x = bandwidth{App,k,1} -->
+        <MCU_bandwidth_exponential>1.0</MCU_bandwidth_exponential> <!-- increment, as an integer value, of bandwidth needed in case of exponential increment of MCU. 0: n/a, base of the exponential of the function b^x, x = bandwidth{App,k,1} -->
+        <MCU_bandwidth_linear_standard_deviation> 0.0 </MCU_bandwidth_linear_standard_deviation> <!-- Standard deviation for the bandwidth for a gaussian distribution of costs in case of a linear coefficient. The coefficient is the mean -->
+        <MCU_bandwidth_exponential_standard_deviation> 0.0 </MCU_bandwidth_exponential_standard_deviation> <!-- Standard deviation for the bandwidth for a gaussian distribution of costs in case of an exponential coefficient. The coefficient is the mean -->
+        <required_ram>1023</required_ram> <!--required ram, in megabytes -->
+        <ram_increment>768</ram_increment> <!-- increment of ram needed, in megabytes, per user -->
+        <MCU_RAM_linear>0.0</MCU_RAM_linear> <!-- increment, as a floating point value 0 to no max_float, of ram needed in case of linear increment of MCU.  O: n/a, part m of the function m*x, x = RAM{App,k,1} -->
+        <MCU_RAM_exponential>1.0</MCU_RAM_exponential> <!-- increment, as an integer value, of ram needed in case of exponential increment of MCU. 0: n/a, base of the exponential of the function b^x, x = RAM{App,k,1} -->
+        <MCU_RAM_linear_standard_deviation> 0.01 </MCU_RAM_linear_standard_deviation> <!-- Standard deviation for the RAM for a gaussian distribution of costs in case of a linear coefficient. The coefficient is the mean -->
+        <MCU_RAM_exponential_standard_deviation> 0.1 </MCU_RAM_exponential_standard_deviation> <!-- Standard deviation for the RAM for a gaussian distribution of costs in case of an exponential coefficient. The coefficient is the mean -->
+        <required_core>9</required_core>
+        <core_increment>7</core_increment> <!-- increment of cpu core needed, per user -->	
+        <MCU_CPU_linear>0.0</MCU_CPU_linear>  <!-- increment, as a floating point value 0 to no max_float, of cpu core needed in case of linear increment of MCU.  O: n/a, part m of the function mx, x = CPU{App,1,1} -->
+        <MCU_CPU_exponential>1.0</MCU_CPU_exponential> <!-- increment, as an integer value, of cpu core needed in case of exponential increment of MCU ( base of the exponential ). 0: n/a base of the exponential of the function b^x, x = CPU{App,k,1} -->
+        <MCU_CPU_linear_standard_deviation> 0.01 </MCU_CPU_linear_standard_deviation> <!-- Standard deviation for the CPU for a gaussian distribution of costs in case of a linear coefficient. The coefficient is the mean -->
+        <MCU_CPU_exponential_standard_deviation> 0.1 </MCU_CPU_exponential_standard_deviation> <!-- Standard deviation for the CPU for a gaussian distribution of costs in case of an exponential coefficient. The coefficient is the mean -->
+        <max_link_latency>0.07850701259937257</max_link_latency> <!-- max latency from the container of the app to users, in seconds -->	
+    </application>
+    <application name="App6">
+        <rate>1</rate>
+        <usage_percentage>0</usage_percentage> <!-- percentage of devices using this type of applications --> 
+        <max_delay>1000000</max_delay> <!-- latency in seconds -->
+        <container_size>200</container_size> <!--application/container size in kilobytes -->
+        <request_size>200</request_size> <!-- the offloading request that will be sent to the orchestrator and then to the device where the task will be offloaded in kilobytes -->
+        <results_size>200</results_size> <!-- the results of the offlaoded task in kilobytes -->
+        <task_length>-1</task_length> <!--MI: million instructions -->
+        <required_bandwidth>5000</required_bandwidth> <!--required bandwidth, in kbit/s -->
+        <bandwidth_increment>1000</bandwidth_increment> <!--increment of bandwidth, in kbit/s, per user -->
+        <MCU_bandwidth_linear>0.0</MCU_bandwidth_linear> <!-- increment, as a floating point value 0 to no max_float, of bandwidth needed in case of linear increment of MCU.  O: n/a, part m of the function m*x, x = bandwidth{App,k,1} -->
+        <MCU_bandwidth_exponential>1.0</MCU_bandwidth_exponential> <!-- increment, as an integer value, of bandwidth needed in case of exponential increment of MCU. 0: n/a, base of the exponential of the function b^x, x = bandwidth{App,k,1} -->
+        <MCU_bandwidth_linear_standard_deviation> 0.0 </MCU_bandwidth_linear_standard_deviation> <!-- Standard deviation for the bandwidth for a gaussian distribution of costs in case of a linear coefficient. The coefficient is the mean -->
+        <MCU_bandwidth_exponential_standard_deviation> 0.0 </MCU_bandwidth_exponential_standard_deviation> <!-- Standard deviation for the bandwidth for a gaussian distribution of costs in case of an exponential coefficient. The coefficient is the mean -->
+        <required_ram>646</required_ram> <!--required ram, in megabytes -->
+        <ram_increment>486</ram_increment> <!-- increment of ram needed, in megabytes, per user -->
+        <MCU_RAM_linear>0.0</MCU_RAM_linear> <!-- increment, as a floating point value 0 to no max_float, of ram needed in case of linear increment of MCU.  O: n/a, part m of the function m*x, x = RAM{App,k,1} -->
+        <MCU_RAM_exponential>1.0</MCU_RAM_exponential> <!-- increment, as an integer value, of ram needed in case of exponential increment of MCU. 0: n/a, base of the exponential of the function b^x, x = RAM{App,k,1} -->
+        <MCU_RAM_linear_standard_deviation> 0.01 </MCU_RAM_linear_standard_deviation> <!-- Standard deviation for the RAM for a gaussian distribution of costs in case of a linear coefficient. The coefficient is the mean -->
+        <MCU_RAM_exponential_standard_deviation> 0.1 </MCU_RAM_exponential_standard_deviation> <!-- Standard deviation for the RAM for a gaussian distribution of costs in case of an exponential coefficient. The coefficient is the mean -->
+        <required_core>11</required_core>
+        <core_increment>9</core_increment> <!-- increment of cpu core needed, per user -->	
+        <MCU_CPU_linear>0.0</MCU_CPU_linear>  <!-- increment, as a floating point value 0 to no max_float, of cpu core needed in case of linear increment of MCU.  O: n/a, part m of the function mx, x = CPU{App,1,1} -->
+        <MCU_CPU_exponential>1.0</MCU_CPU_exponential> <!-- increment, as an integer value, of cpu core needed in case of exponential increment of MCU ( base of the exponential ). 0: n/a base of the exponential of the function b^x, x = CPU{App,k,1} -->
+        <MCU_CPU_linear_standard_deviation> 0.01 </MCU_CPU_linear_standard_deviation> <!-- Standard deviation for the CPU for a gaussian distribution of costs in case of a linear coefficient. The coefficient is the mean -->
+        <MCU_CPU_exponential_standard_deviation> 0.1 </MCU_CPU_exponential_standard_deviation> <!-- Standard deviation for the CPU for a gaussian distribution of costs in case of an exponential coefficient. The coefficient is the mean -->
+        <max_link_latency>0.09041443099265395</max_link_latency> <!-- max latency from the container of the app to users, in seconds -->	
+    </application>
+    <application name="App7">
+        <rate>1</rate>
+        <usage_percentage>0</usage_percentage> <!-- percentage of devices using this type of applications --> 
+        <max_delay>1000000</max_delay> <!-- latency in seconds -->
+        <container_size>200</container_size> <!--application/container size in kilobytes -->
+        <request_size>200</request_size> <!-- the offloading request that will be sent to the orchestrator and then to the device where the task will be offloaded in kilobytes -->
+        <results_size>200</results_size> <!-- the results of the offlaoded task in kilobytes -->
+        <task_length>-1</task_length> <!--MI: million instructions -->
+        <required_bandwidth>5000</required_bandwidth> <!--required bandwidth, in kbit/s -->
+        <bandwidth_increment>1000</bandwidth_increment> <!--increment of bandwidth, in kbit/s, per user -->
+        <MCU_bandwidth_linear>0.0</MCU_bandwidth_linear> <!-- increment, as a floating point value 0 to no max_float, of bandwidth needed in case of linear increment of MCU.  O: n/a, part m of the function m*x, x = bandwidth{App,k,1} -->
+        <MCU_bandwidth_exponential>1.0</MCU_bandwidth_exponential> <!-- increment, as an integer value, of bandwidth needed in case of exponential increment of MCU. 0: n/a, base of the exponential of the function b^x, x = bandwidth{App,k,1} -->
+        <MCU_bandwidth_linear_standard_deviation> 0.0 </MCU_bandwidth_linear_standard_deviation> <!-- Standard deviation for the bandwidth for a gaussian distribution of costs in case of a linear coefficient. The coefficient is the mean -->
+        <MCU_bandwidth_exponential_standard_deviation> 0.0 </MCU_bandwidth_exponential_standard_deviation> <!-- Standard deviation for the bandwidth for a gaussian distribution of costs in case of an exponential coefficient. The coefficient is the mean -->
+        <required_ram>609</required_ram> <!--required ram, in megabytes -->
+        <ram_increment>459</ram_increment> <!-- increment of ram needed, in megabytes, per user -->
+        <MCU_RAM_linear>0.0</MCU_RAM_linear> <!-- increment, as a floating point value 0 to no max_float, of ram needed in case of linear increment of MCU.  O: n/a, part m of the function m*x, x = RAM{App,k,1} -->
+        <MCU_RAM_exponential>1.0</MCU_RAM_exponential> <!-- increment, as an integer value, of ram needed in case of exponential increment of MCU. 0: n/a, base of the exponential of the function b^x, x = RAM{App,k,1} -->
+        <MCU_RAM_linear_standard_deviation> 0.01 </MCU_RAM_linear_standard_deviation> <!-- Standard deviation for the RAM for a gaussian distribution of costs in case of a linear coefficient. The coefficient is the mean -->
+        <MCU_RAM_exponential_standard_deviation> 0.1 </MCU_RAM_exponential_standard_deviation> <!-- Standard deviation for the RAM for a gaussian distribution of costs in case of an exponential coefficient. The coefficient is the mean -->
+        <required_core>5</required_core>
+        <core_increment>4</core_increment> <!-- increment of cpu core needed, per user -->	
+        <MCU_CPU_linear>0.0</MCU_CPU_linear>  <!-- increment, as a floating point value 0 to no max_float, of cpu core needed in case of linear increment of MCU.  O: n/a, part m of the function mx, x = CPU{App,1,1} -->
+        <MCU_CPU_exponential>1.0</MCU_CPU_exponential> <!-- increment, as an integer value, of cpu core needed in case of exponential increment of MCU ( base of the exponential ). 0: n/a base of the exponential of the function b^x, x = CPU{App,k,1} -->
+        <MCU_CPU_linear_standard_deviation> 0.01 </MCU_CPU_linear_standard_deviation> <!-- Standard deviation for the CPU for a gaussian distribution of costs in case of a linear coefficient. The coefficient is the mean -->
+        <MCU_CPU_exponential_standard_deviation> 0.1 </MCU_CPU_exponential_standard_deviation> <!-- Standard deviation for the CPU for a gaussian distribution of costs in case of an exponential coefficient. The coefficient is the mean -->
+        <max_link_latency>0.08426698892342388</max_link_latency> <!-- max latency from the container of the app to users, in seconds -->	
+    </application>
+    <application name="App8">
+        <rate>1</rate>
+        <usage_percentage>0</usage_percentage> <!-- percentage of devices using this type of applications --> 
+        <max_delay>1000000</max_delay> <!-- latency in seconds -->
+        <container_size>200</container_size> <!--application/container size in kilobytes -->
+        <request_size>200</request_size> <!-- the offloading request that will be sent to the orchestrator and then to the device where the task will be offloaded in kilobytes -->
+        <results_size>200</results_size> <!-- the results of the offlaoded task in kilobytes -->
+        <task_length>-1</task_length> <!--MI: million instructions -->
+        <required_bandwidth>5000</required_bandwidth> <!--required bandwidth, in kbit/s -->
+        <bandwidth_increment>1000</bandwidth_increment> <!--increment of bandwidth, in kbit/s, per user -->
+        <MCU_bandwidth_linear>0.0</MCU_bandwidth_linear> <!-- increment, as a floating point value 0 to no max_float, of bandwidth needed in case of linear increment of MCU.  O: n/a, part m of the function m*x, x = bandwidth{App,k,1} -->
+        <MCU_bandwidth_exponential>1.0</MCU_bandwidth_exponential> <!-- increment, as an integer value, of bandwidth needed in case of exponential increment of MCU. 0: n/a, base of the exponential of the function b^x, x = bandwidth{App,k,1} -->
+        <MCU_bandwidth_linear_standard_deviation> 0.0 </MCU_bandwidth_linear_standard_deviation> <!-- Standard deviation for the bandwidth for a gaussian distribution of costs in case of a linear coefficient. The coefficient is the mean -->
+        <MCU_bandwidth_exponential_standard_deviation> 0.0 </MCU_bandwidth_exponential_standard_deviation> <!-- Standard deviation for the bandwidth for a gaussian distribution of costs in case of an exponential coefficient. The coefficient is the mean -->
+        <required_ram>909</required_ram> <!--required ram, in megabytes -->
+        <ram_increment>684</ram_increment> <!-- increment of ram needed, in megabytes, per user -->
+        <MCU_RAM_linear>0.0</MCU_RAM_linear> <!-- increment, as a floating point value 0 to no max_float, of ram needed in case of linear increment of MCU.  O: n/a, part m of the function m*x, x = RAM{App,k,1} -->
+        <MCU_RAM_exponential>1.0</MCU_RAM_exponential> <!-- increment, as an integer value, of ram needed in case of exponential increment of MCU. 0: n/a, base of the exponential of the function b^x, x = RAM{App,k,1} -->
+        <MCU_RAM_linear_standard_deviation> 0.01 </MCU_RAM_linear_standard_deviation> <!-- Standard deviation for the RAM for a gaussian distribution of costs in case of a linear coefficient. The coefficient is the mean -->
+        <MCU_RAM_exponential_standard_deviation> 0.1 </MCU_RAM_exponential_standard_deviation> <!-- Standard deviation for the RAM for a gaussian distribution of costs in case of an exponential coefficient. The coefficient is the mean -->
+        <required_core>5</required_core>
+        <core_increment>4</core_increment> <!-- increment of cpu core needed, per user -->	
+        <MCU_CPU_linear>0.0</MCU_CPU_linear>  <!-- increment, as a floating point value 0 to no max_float, of cpu core needed in case of linear increment of MCU.  O: n/a, part m of the function mx, x = CPU{App,1,1} -->
+        <MCU_CPU_exponential>1.0</MCU_CPU_exponential> <!-- increment, as an integer value, of cpu core needed in case of exponential increment of MCU ( base of the exponential ). 0: n/a base of the exponential of the function b^x, x = CPU{App,k,1} -->
+        <MCU_CPU_linear_standard_deviation> 0.01 </MCU_CPU_linear_standard_deviation> <!-- Standard deviation for the CPU for a gaussian distribution of costs in case of a linear coefficient. The coefficient is the mean -->
+        <MCU_CPU_exponential_standard_deviation> 0.1 </MCU_CPU_exponential_standard_deviation> <!-- Standard deviation for the CPU for a gaussian distribution of costs in case of an exponential coefficient. The coefficient is the mean -->
+        <max_link_latency>0.09652887557589686</max_link_latency> <!-- max latency from the container of the app to users, in seconds -->	
+    </application>
+</applications>
