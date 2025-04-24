@@ -1,45 +1,49 @@
 #!/bin/bash
 
-# Directory del progetto Maven
-PROJECT_DIR="."
-
-# Verifica se Maven � installato
-if ! command -v mvn &> /dev/null; then
-    echo "Maven non � installato. Installalo prima di eseguire lo script."
+# Check if required arguments are provided
+if [ $# -lt 3 ]; then
+    echo "Usage: $0 <BASE_FOLDER> <MAIN_CLASS> <REPEAT_COUNT>"
     exit 1
 fi
 
-# Spostati nella directory del progetto
-cd "$PROJECT_DIR" || { echo "Directory del progetto non trovata!"; exit 1; }
+# Input parameters
+BASE_FOLDER="$1"
+MAIN_CLASS="$2"
+REPEAT_COUNT="$3"
 
-# Parametri per la classe principale
-MAIN_CLASS="PaperScenario.PaperScenarioMain"
+# Maven project directory
+PROJECT_DIR="."
 
-# Nome base della cartella
-BASE_FOLDER="PureEdgeSim/PaperScenario_Settings_8_2000"
+# Check if Maven is installed
+if ! command -v mvn &> /dev/null; then
+    echo "Maven is not installed. Please install it before running this script."
+    exit 1
+fi
 
-# Array di valori per la cartella
+# Navigate to the project directory
+cd "$PROJECT_DIR" || { echo "Project directory not found!"; exit 1; }
+
+# Array of values for the folder
 VALUES_1=("0.05" "0.1")
 SUFFIXES=("R" "UR")
 
-# Esegui il progetto Maven per tutte le combinazioni, 5 volte ciascuna
+# Run the Maven project for all combinations, using the specified repeat count
 for VALUE_1 in "${VALUES_1[@]}"; do
     for SUFFIX in "${SUFFIXES[@]}"; do
-        # Crea il nome completo della cartella, aggiungendo _LIN prima del suffisso
+        # Create the full folder name, adding _LIN before the suffix
         FOLDER_NAME="${BASE_FOLDER}_25.0_${VALUE_1}_LIN_${SUFFIX}/"
-            
-        # Esegui la combinazione 5 volte
-        for i in {1..5}; do
-            echo "Avvio esecuzione $i con la cartella: $FOLDER_NAME in background..."
+        
+        for ((i = 1; i <= REPEAT_COUNT; i++)); do
+            echo "Starting execution $i with folder: $FOLDER_NAME in background..."
             mvn exec:java -Dexec.mainClass="$MAIN_CLASS" -Dexec.args="$FOLDER_NAME" > /dev/null 2>&1 &
-               
+            
             PID=$!
-            echo "Esecuzione $i avviata con PID: $PID (valori $VALUE_2, $VALUE_1, e suffisso $SUFFIX)"
-                
-            # Pausa di 1 secondo
+            echo "Execution $i started with PID: $PID (value: $VALUE_1, suffix: $SUFFIX)"
+            
+            # Pause for 1 second
             sleep 1
         done
     done
 done
 
-echo "Tutte le esecuzioni sono state avviate."
+echo "All executions have been started."
