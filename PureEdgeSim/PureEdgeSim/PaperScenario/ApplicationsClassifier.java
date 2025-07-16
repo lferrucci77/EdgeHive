@@ -525,54 +525,6 @@ final class KMeans {
    public String getTiming() {
       return "KMeans++ took: " + (double) (end - start) / 1000.0 + " seconds";
    }
-
-
-
-   /***********************************************************************
-    * Unit testing
-    **********************************************************************
-   
-   public static void main(String args[]) throws IOException {
-      // the test data is four 750-point Gaussian clusters (3000 points in all)
-      // created around the vertices of the unit square
-      String data = "TestData.csv";
-      int numPoints = 3000;
-      int dimensions = 2;
-      int k = 4;
-      double[][] points = CSVreader.read(data, numPoints, dimensions);
-
-      // run K-means
-      final long startTime = System.currentTimeMillis();
-      KMeans clustering = new KMeans.Builder(k, points)
-                                    .iterations(50)
-                                    .pp(true)
-                                    .epsilon(.001)
-                                    .useEpsilon(true)
-                                    .build();
-      final long endTime = System.currentTimeMillis();
-     
-      // print timing information
-      final long elapsed = endTime - startTime;
-      System.out.println("Clustering took " + (double) elapsed/1000 + " seconds");
-      System.out.println();
-      
-      // get output
-      double[][] centroids = clustering.getCentroids();
-      double WCSS          = clustering.getWCSS();
-      // int[] assignment  = kmean.getAssignment();
-
-      // print output
-      for (int i = 0; i < k; i++)
-         System.out.println("(" + centroids[i][0] + ", " + centroids[i][1] + ")");
-      System.out.println();
-
-      System.out.println("The within-cluster sum-of-squares (WCSS) = " + WCSS);
-      System.out.println();
-      
-      // write output to CSV
-      // CSVwriter.write("filePath", centroids);
-   }
-*/
 }
 
 
@@ -676,7 +628,6 @@ public class ApplicationsClassifier
 	public static void main(String[] args) 
 	{
 		try {
-			// int[] sizes = {11563314,11563122,11561685,11560979,11556151,11555559,11554103,11549167,11548876,11533055,11530475}; 
 			final int size = 10000;
 			final int k = 16;
 			double[][] data = null;			
@@ -752,81 +703,6 @@ public class ApplicationsClassifier
 		    			    
 		    System.out.println("\nThe within-cluster sum-of-squares (WCSS) = " + WCSS + "\n");
 			
-
-			/*
-			 * double min_lat = Double.MAX_VALUE; double min_long = Double.MAX_VALUE;
-			 * 
-			 * double max_lat = -Double.MAX_VALUE; double max_long = -Double.MAX_VALUE;
-			 * 
-			 * 
-			 * for(String[] el: r) { double lat_double = Double.parseDouble(el[1]); double
-			 * long_double = Double.parseDouble(el[2]);
-			 * 
-			 * // Calcolo coppia minima, vertice in basso a sinistra if ( lat_double <
-			 * min_lat) min_lat = lat_double;
-			 * 
-			 * if ( long_double < min_long) min_long = long_double;
-			 * 
-			 * 
-			 * // Calcolo coppia massima, vertice in alto a destra
-			 * 
-			 * if ( lat_double > max_lat) max_lat = lat_double;
-			 * 
-			 * if ( long_double > max_long) max_long = long_double; }
-			 * 
-			 * 
-			 * Geodetic2DPoint bottom_left_vertex = new Geodetic2DPoint(new
-			 * Longitude(min_long, Angle.DEGREES), new Latitude(min_lat, Angle.DEGREES));
-			 * Geodetic2DPoint top_right_vertex = new Geodetic2DPoint(new
-			 * Longitude(max_long, Angle.DEGREES), new Latitude(max_lat, Angle.DEGREES));
-			 * //max_long, max_lat) Geodetic2DPoint top_left_vertex = new
-			 * Geodetic2DPoint(new Longitude(min_long, Angle.DEGREES), new Latitude(max_lat,
-			 * Angle.DEGREES)); Geodetic2DPoint bottom_right_vertex = new
-			 * Geodetic2DPoint(new Longitude(max_long, Angle.DEGREES), new Latitude(min_lat,
-			 * Angle.DEGREES));
-			 * 
-			 * Ellipsoid earth = Ellipsoid.getInstance("WGS 84");
-			 * 
-			 * //double length_left_side =
-			 * Math.ceil(earth.orthodromicDistance(bottom_left_vertex,top_left_vertex));
-			 * //double length_bottom_side =
-			 * Math.ceil(earth.orthodromicDistance(bottom_left_vertex,bottom_right_vertex));
-			 * 
-			 * File file = new File(
-			 * "C:\\Users\\Ferrucci\\git\\PureEdgeSim\\PureEdgeSim\\PaperScenario_Settings\\edge_datacenters_new.xml"
-			 * ); FileWriter fw = new FileWriter(file); BufferedWriter bw = new
-			 * BufferedWriter(fw); bw.write( "<?xml version=\"1.0\"?>\r\n" +
-			 * "<edge_datacenters>\r\n");
-			 * 
-			 * for(String[] el: r) {
-			 * 
-			 * 
-			 * bw.write("	<datacenter arch=\"x86\" os=\"Linux\">\r\n" +
-			 * "		<idleConsumption>0</idleConsumption>\r\n" +
-			 * "		<maxConsumption>0</maxConsumption>\r\n" +
-			 * "		<isOrchestrator>true</isOrchestrator>\r\n" + "		<location>\r\n"
-			 * + "			<x_pos>" +
-			 * Math.round(earth.orthodromicDistance(bottom_left_vertex, new
-			 * Geodetic2DPoint(new Longitude(Double.parseDouble(el[2]), Angle.DEGREES), new
-			 * Latitude(min_lat, Angle.DEGREES)))) + "</x_pos>\r\n" + "			<y_pos>" +
-			 * Math.round(earth.orthodromicDistance(bottom_left_vertex, new
-			 * Geodetic2DPoint(new Longitude(min_long, Angle.DEGREES), new
-			 * Latitude(Double.parseDouble(el[1]), Angle.DEGREES)))) + "</y_pos>\r\n" +
-			 * "		</location>\r\n" + "		<hosts>\r\n" + "			<host>\r\n"
-			 * + "				<core>24</core>\r\n" +
-			 * "				<mips>1600000</mips>\r\n" +
-			 * "				<ram>6000</ram>\r\n" +
-			 * "				<storage>200000</storage>\r\n" + "				<VMs>\r\n" +
-			 * "					<VM>\r\n" + "						<core>24</core>\r\n"
-			 * + "						<mips>1600000</mips>\r\n" +
-			 * "						<ram>6000</ram>\r\n" +
-			 * "						<storage>200000</storage>\r\n" +
-			 * "					</VM>					\r\n" +
-			 * "				</VMs>\r\n" + "			</host>\r\n" +
-			 * "		</hosts>\r\n" + "	</datacenter>\r\n"); }
-			 * 
-			 * bw.write( "</edge_datacenters>"); bw.close();
-			 */
 		}
 		catch(IOException e) //| CsvValidationException e ) 
 		{

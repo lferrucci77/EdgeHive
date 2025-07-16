@@ -26,7 +26,7 @@
         <MCU_CPU_exponential>1.0</MCU_CPU_exponential> <!-- increment, as an integer value, of cpu core needed in case of exponential increment of MCU ( base of the exponential ). 0: n/a base of the exponential of the function b^x, x = CPU{App,k,1} -->
         <MCU_CPU_linear_standard_deviation> 0.01 </MCU_CPU_linear_standard_deviation> <!-- Standard deviation for the CPU for a gaussian distribution of costs in case of a linear coefficient. The coefficient is the mean -->
         <MCU_CPU_exponential_standard_deviation> 0.1 </MCU_CPU_exponential_standard_deviation> <!-- Standard deviation for the CPU for a gaussian distribution of costs in case of an exponential coefficient. The coefficient is the mean -->
-        <max_link_latency>0.08887119583089556</max_link_latency> <!-- max latency from the container of the app to users, in seconds -->	
+        <max_link_latency>0.023434589238</max_link_latency> <!-- max latency from the container of the app to users, in seconds -->	
     </application>
     <application name="App2">
         <rate>1</rate>
@@ -54,7 +54,7 @@
         <MCU_CPU_exponential>1.0</MCU_CPU_exponential> <!-- increment, as an integer value, of cpu core needed in case of exponential increment of MCU ( base of the exponential ). 0: n/a base of the exponential of the function b^x, x = CPU{App,k,1} -->	
         <MCU_CPU_linear_standard_deviation> 0.01 </MCU_CPU_linear_standard_deviation> <!-- Standard deviation for the CPU for a gaussian distribution of costs in case of a linear coefficient. The coefficient is the mean -->
         <MCU_CPU_exponential_standard_deviation> 0.1 </MCU_CPU_exponential_standard_deviation> <!-- Standard deviation for the CPU for a gaussian distribution of costs in case of an exponential coefficient. The coefficient is the mean -->
-        <max_link_latency>0.07439168659281747</max_link_latency> <!-- max latency from the container of the app to users, in seconds -->	
+        <max_link_latency>0.035475838439</max_link_latency> <!-- max latency from the container of the app to users, in seconds -->	
     </application>
     <application name="App3">
         <rate>1</rate>
@@ -82,7 +82,7 @@
         <MCU_CPU_exponential>1.0</MCU_CPU_exponential> <!-- increment, as an integer value, of cpu core needed in case of exponential increment of MCU ( base of the exponential ). 0: n/a base of the exponential of the function b^x, x = CPU{App,k,1} -->	
         <MCU_CPU_linear_standard_deviation> 0.01 </MCU_CPU_linear_standard_deviation> <!-- Standard deviation for the CPU for a gaussian distribution of costs in case of a linear coefficient. The coefficient is the mean -->
         <MCU_CPU_exponential_standard_deviation> 0.1 </MCU_CPU_exponential_standard_deviation> <!-- Standard deviation for the CPU for a gaussian distribution of costs in case of an exponential coefficient. The coefficient is the mean -->
-        <max_link_latency>0.08203198484230084</max_link_latency> <!-- max latency from the container of the app to users, in seconds -->	
+        <max_link_latency>0.04203198484230084</max_link_latency> <!-- max latency from the container of the app to users, in seconds -->	
     </application>
     <application name="App4">
         <rate>1</rate>
@@ -110,7 +110,7 @@
         <MCU_CPU_exponential>1.0</MCU_CPU_exponential> <!-- increment, as an integer value, of cpu core needed in case of exponential increment of MCU ( base of the exponential ). 0: n/a base of the exponential of the function b^x, x = CPU{App,k,1} -->	
         <MCU_CPU_linear_standard_deviation> 0.01 </MCU_CPU_linear_standard_deviation> <!-- Standard deviation for the CPU for a gaussian distribution of costs in case of a linear coefficient. The coefficient is the mean -->
         <MCU_CPU_exponential_standard_deviation> 0.1 </MCU_CPU_exponential_standard_deviation> <!-- Standard deviation for the CPU for a gaussian distribution of costs in case of an exponential coefficient. The coefficient is the mean -->
-        <max_link_latency>0.08519788164901484</max_link_latency> <!-- max latency from the container of the app to users, in seconds -->	
+        <max_link_latency>0.024548359834</max_link_latency> <!-- max latency from the container of the app to users, in seconds -->	
     </application>
     <application name="App5">
         <rate>1</rate>
@@ -138,7 +138,7 @@
         <MCU_CPU_exponential>1.0</MCU_CPU_exponential> <!-- increment, as an integer value, of cpu core needed in case of exponential increment of MCU ( base of the exponential ). 0: n/a base of the exponential of the function b^x, x = CPU{App,k,1} -->
         <MCU_CPU_linear_standard_deviation> 0.01 </MCU_CPU_linear_standard_deviation> <!-- Standard deviation for the CPU for a gaussian distribution of costs in case of a linear coefficient. The coefficient is the mean -->
         <MCU_CPU_exponential_standard_deviation> 0.1 </MCU_CPU_exponential_standard_deviation> <!-- Standard deviation for the CPU for a gaussian distribution of costs in case of an exponential coefficient. The coefficient is the mean -->
-        <max_link_latency>0.07850701259937257</max_link_latency> <!-- max latency from the container of the app to users, in seconds -->	
+        <max_link_latency>0.0508439482</max_link_latency> <!-- max latency from the container of the app to users, in seconds -->	
     </application>
     <application name="App6">
         <rate>1</rate>
@@ -166,7 +166,7 @@
         <MCU_CPU_exponential>1.0</MCU_CPU_exponential> <!-- increment, as an integer value, of cpu core needed in case of exponential increment of MCU ( base of the exponential ). 0: n/a base of the exponential of the function b^x, x = CPU{App,k,1} -->
         <MCU_CPU_linear_standard_deviation> 0.01 </MCU_CPU_linear_standard_deviation> <!-- Standard deviation for the CPU for a gaussian distribution of costs in case of a linear coefficient. The coefficient is the mean -->
         <MCU_CPU_exponential_standard_deviation> 0.1 </MCU_CPU_exponential_standard_deviation> <!-- Standard deviation for the CPU for a gaussian distribution of costs in case of an exponential coefficient. The coefficient is the mean -->
-        <max_link_latency>0.09041443099265395</max_link_latency> <!-- max latency from the container of the app to users, in seconds -->	
+        <max_link_latency>0.04041443099265395</max_link_latency> <!-- max latency from the container of the app to users, in seconds -->	
     </application>
     <application name="App7">
         <rate>1</rate>
@@ -194,7 +194,7 @@
         <MCU_CPU_exponential>1.0</MCU_CPU_exponential> <!-- increment, as an integer value, of cpu core needed in case of exponential increment of MCU ( base of the exponential ). 0: n/a base of the exponential of the function b^x, x = CPU{App,k,1} -->
         <MCU_CPU_linear_standard_deviation> 0.01 </MCU_CPU_linear_standard_deviation> <!-- Standard deviation for the CPU for a gaussian distribution of costs in case of a linear coefficient. The coefficient is the mean -->
         <MCU_CPU_exponential_standard_deviation> 0.1 </MCU_CPU_exponential_standard_deviation> <!-- Standard deviation for the CPU for a gaussian distribution of costs in case of an exponential coefficient. The coefficient is the mean -->
-        <max_link_latency>0.08426698892342388</max_link_latency> <!-- max latency from the container of the app to users, in seconds -->	
+        <max_link_latency>0.0294832842783849</max_link_latency> <!-- max latency from the container of the app to users, in seconds -->	
     </application>
     <application name="App8">
         <rate>1</rate>
@@ -222,6 +222,6 @@
         <MCU_CPU_exponential>1.0</MCU_CPU_exponential> <!-- increment, as an integer value, of cpu core needed in case of exponential increment of MCU ( base of the exponential ). 0: n/a base of the exponential of the function b^x, x = CPU{App,k,1} -->
         <MCU_CPU_linear_standard_deviation> 0.01 </MCU_CPU_linear_standard_deviation> <!-- Standard deviation for the CPU for a gaussian distribution of costs in case of a linear coefficient. The coefficient is the mean -->
         <MCU_CPU_exponential_standard_deviation> 0.1 </MCU_CPU_exponential_standard_deviation> <!-- Standard deviation for the CPU for a gaussian distribution of costs in case of an exponential coefficient. The coefficient is the mean -->
-        <max_link_latency>0.09652887557589686</max_link_latency> <!-- max latency from the container of the app to users, in seconds -->	
+        <max_link_latency>0.04239239048</max_link_latency> <!-- max latency from the container of the app to users, in seconds -->	
     </application>
 </applications>

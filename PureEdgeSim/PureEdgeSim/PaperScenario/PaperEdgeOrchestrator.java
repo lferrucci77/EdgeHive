@@ -230,9 +230,7 @@ public class PaperEdgeOrchestrator extends Orchestrator {
 
         String nomeFileCpu = "DatacentersCpu" + phase + "Stats";
         String nomeFileBW = "DatacentersBW" + phase + "Stats";
-
-       
-        
+   
         // Uso di BufferedWriter per scrivere nel file
         try {
         	BufferedWriter writerRam = new BufferedWriter(new FileWriter(PaperLog.getFileName(nomeFileRam,ext)));
