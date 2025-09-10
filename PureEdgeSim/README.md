@@ -90,7 +90,11 @@ It consists of the following **7 modules**:
 
 ### References
 
-Emanuele Carlini, Patrizio Dazzi, Luca Ferrucci, Jacopo Massa, Matteo Mordacchini: **Marginal Cost of Computation as a Collaborative Strategy for Resource Management at the Edge** The 2024 International Conference on the Economics of Grids, Clouds, Systems, and Services, Rome, Italy
+Carlini, E., Dazzi, P., Ferrucci, L., Massa, J., Mordacchini, M.: **Marginal Cost of Computation as a Collaborative Strategy for Resource Management at the Edge** The 2024 International Conference on the Economics of Grids, Clouds, Systems, and Services, Rome, Italy
+
+Ferrucci, L., Mordacchini, M.,  Dazzi, P.: **Decentralized Replica Management in Latency-Bound Edge Environments for Resource Usage Minimization** IEEE Access vol. 12, 2024
+
+Ferrucci, L., Mordacchini, M., Coppola, M., Carlini, E., Kavalionak, H., Dazzi, P.: **Latency preserving self-optimizing placement at the edge** The 2020 1st FRAME Workshop, colocated with HPDC 2020, virtual event
 
 Mechalikh, C., Taktak, H., Moussa, F.: **PureEdgeSim: A Simulation Toolkit for Performance Evaluation of Cloud, Fog, and Pure Edge Computing Environments**. The 2019 International Conference on High Performance Computing & Simulation (2019), 700-707.
 
