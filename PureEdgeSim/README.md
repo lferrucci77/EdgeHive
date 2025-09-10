@@ -1,4 +1,67 @@
-## 1. Background
+EdgeHive: Tool for Decentralized Resource Management in Edge Computing
+Overview
+
+EdgeHive is a tool designed to optimize the resource management and workload balancing of decentralized edge computing systems. It leverages a Marginal Computing Cost per User (MCU) model to facilitate self-organizing behavior in Edge Data Centers (EDCs) based on a collaborative approach. This tool extends the capabilities of the PureEdgeSim simulator to manage the distribution of workloads, data, and applications on edge devices.
+
+The primary goal of EdgeHive is to balance the load across edge devices, minimize latency, and ensure the efficient distribution of resources in a decentralized system. It does so by evaluating the readiness of EDCs to accommodate new users based on a cost-driven framework. Through simulations, the system optimizes resource allocation and reduces the overhead of managing decentralized infrastructures.
+
+Key Features
+
+Collaborative Resource Management: Using the MCU metric, EdgeHive enables edge devices to autonomously balance their workloads and manage resources in a collaborative environment. EDCs can decide whether to accept or offload users based on resource availability and latency constraints.
+
+Decentralized Workload Balancing: Unlike traditional centralized systems, EdgeHive uses a decentralized approach, where each EDC works autonomously while coordinating with nearby nodes. This reduces the risk of single points of failure and optimizes scalability.
+
+Policy-Driven Approach: EdgeHive allows EDCs to define customizable policies on how to handle additional user requests, which is crucial in resource-constrained environments. Policies are influenced by factors like latency, resource availability, and marginal cost for each user.
+
+Real-Time Latency Management: The system ensures that all operations respect predefined latency limits for each application, improving Quality of Experience (QoE) for users.
+
+Resource Efficiency: Through load balancing, EdgeHive reduces the number of active application instances, optimizing resource use without sacrificing performance.
+
+Simulation with PureEdgeSim
+
+EdgeHive integrates with PureEdgeSim, a state-of-the-art edge computing simulator, to evaluate the effectiveness of its workload balancing mechanisms. The simulator allows the testing of various scenarios involving edge devices, user distribution, and application workload characteristics.
+
+Real-World Datasets: Simulations use datasets like the Alibaba Trace Dataset, which consists of microservices data and real-world user behavior, providing insights into how the system performs under different loads and configurations.
+
+Experimental Setup: The simulations involve 125 edge nodes deployed in a 1.2 km² area, with workloads derived from over 20,000 microservices, demonstrating the scalability of the system.
+
+Core Algorithms
+
+Marginal Computing Cost per User (MCU):
+
+MCU quantifies the residual capacity of an EDC to accept additional users. It represents the readiness of the system to accommodate new users based on its current load and resource availability.
+
+The system’s performance is guided by the relationship between the average user cost and the marginal computing cost of a new user.
+
+Collaborative Load Balancing Algorithm:
+
+EDCs assess their own workload and the marginal cost of accommodating additional users. Based on this assessment, EDCs decide whether to offload users to neighboring edge nodes.
+
+The decision process is influenced by factors like latency, resource usage, and the willingness of neighboring EDCs to accept additional users.
+
+User Migration:
+
+Users can be migrated between edge devices to balance the load. This migration occurs based on the capacity of neighboring devices to handle the additional users while respecting latency constraints.
+
+Partial Migration:
+
+EdgeHive supports the partial migration of users, transferring subsets of users from one node to another instead of performing complete migration. This helps reduce the system's migration overhead.
+
+Simulation Results
+
+EdgeHive's framework was evaluated through extensive experiments using different user distribution models (e.g., Uniform Random and Random) and various edge configurations. Key results include:
+
+Load Balancing: The system demonstrated improved load distribution across edge devices compared to baseline strategies. This is validated using Lorenz curves and Gini coefficients to measure inequality in resource distribution.
+
+Impact of User Migrations: The system's ability to efficiently migrate users was analyzed. As expected, higher values of MCU resulted in fewer migrations, contributing to system stability and performance.
+
+Latency Management: EdgeHive kept the latency within acceptable bounds by selectively migrating users based on their current load and the MCU cost, ensuring that migrations did not introduce excessive delays.
+
+Conclusion
+
+EdgeHive provides a scalable and efficient solution for decentralized resource management in edge computing environments. By integrating a policy-driven marginal cost model, the tool ensures optimal workload distribution while adhering to latency constraints. Its implementation in PureEdgeSim highlights its effectiveness in improving resource utilization and reducing the operational cost of edge systems.
+
+EdgeHive’s approach is adaptable to real-world applications, particularly in environments with high user demands, such as autonomous vehicles, healthcare, and industrial IoT. Future improvements will focus on incorporating more dynamic models and real-time adaptations for user mobility and resource allocation.
 
    
 ## 2. PureEdgeSim Architecture
