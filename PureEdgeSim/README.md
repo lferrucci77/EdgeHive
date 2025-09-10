@@ -2,9 +2,9 @@
 
 ## 1. Overview
 
-EdgeHive is a tool designed to optimize the resource management and workload balancing of decentralized edge computing systems. It leverages a **Marginal Computing Cost per User (MCU)** model to facilitate self-organizing behavior in Edge Data Centers (EDCs) based on a collaborative approach. This tool extends the capabilities of the **PureEdgeSim** simulator to manage the distribution of workloads, data, and applications on edge devices.
+EdgeHive is a tool designed to optimize the resource management and workload balancing of decentralized edge computing systems. It leverages a **Marginal Computing Cost per User (MCU)** model to facilitate self-organizing behavior in Edge Data Centers (EDCs) based on a collaborative approach. This tool, actually, is implemented on the **PureEdgeSim** simulator to manage the distribution of workloads, data, and applications on edge devices, and to test the validity of the approach.
 
-The primary goal of EdgeHive is to balance the load across edge devices, minimize latency, and ensure the efficient distribution of resources in a decentralized system. It does so by evaluating the readiness of EDCs to accommodate new users based on a cost-driven framework. Through simulations, the system optimizes resource allocation and reduces the overhead of managing decentralized infrastructures.
+The primary goal of EdgeHive is to balance the load across edge devices, keeping a predefined threshold on latency, ensuring the efficient distribution of resources in a decentralized system. It does so by evaluating the readiness of EDCs to accommodate new users based on a cost-driven framework. Through simulations, the system optimizes resource allocation and reduces the overhead of managing decentralized infrastructures.
 
 ## 2. Key Features
 
