@@ -90,6 +90,7 @@ It consists of the following **7 modules**:
 
 ### References
 
+Emanuele Carlini, Patrizio Dazzi, Luca Ferrucci, Jacopo Massa, Matteo Mordacchini: **Marginal Cost of Computation as a Collaborative Strategy for Resource Management at the Edge. International Conference on the Economics of Grids, Clouds, Systems, and Services, 2024
 
 Mechalikh, C., Taktak, H., Moussa, F.: **PureEdgeSim: A Simulation Toolkit for Performance Evaluation of Cloud, Fog, and Pure Edge Computing Environments**. The 2019 International Conference on High Performance Computing & Simulation (2019), 700-707.
 
