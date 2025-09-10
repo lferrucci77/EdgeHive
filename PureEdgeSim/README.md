@@ -28,7 +28,7 @@ EdgeHive integrates with **PureEdgeSim**, a state-of-the-art edge computing simu
 
 ### Core Algorithms
 
-#### 4. Marginal Computing Cost per User (MCU):
+#### Marginal Computing Cost per User (MCU):
 
 MCU quantifies the residual capacity of an EDC to accept additional users. It represents the readiness of the system to accommodate new users based on its current load and resource availability.
 
