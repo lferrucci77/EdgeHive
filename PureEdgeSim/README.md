@@ -38,7 +38,7 @@ The system’s performance is guided by the relationship between the average use
 
 EDCs assess their own workload and the marginal cost of accommodating additional users. Based on this assessment, EDCs decide whether to offload users to neighboring edge nodes. The decision process is influenced by factors like latency, resource usage, and the willingness of neighboring EDCs to accept additional users.
 
-#### 5. User Migration:
+## 5. User Migration:
 
 Users can be migrated between edge devices to balance the load. This migration occurs based on the capacity of neighboring devices to handle the additional users while respecting latency constraints.
 
