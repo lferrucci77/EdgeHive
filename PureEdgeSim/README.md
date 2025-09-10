@@ -1,8 +1,5 @@
 ## 1. Background
 
-Edge and Mist (Extreme Edge) computing, two emerging computing paradigms that aim to overcome the Cloud computing limitations by bringing its applications at the Edge of the network. Thus, reducing both the latency and the Cloud workload and leading to a more scalable network. Nevertheless, in these distributed environments where many devices need to offload their tasks to one another (either to increase their lifetime or to minimize the task completion delay) many issues such as resources management strategies has to be solved. Instead of testing them on a real distributed system, the simulation makes it possible to evaluate the proposed strategies and algorithms in a repeatable, controllable and cost-effective way before their actual deployment. However, when it comes to simulation tools, Mist computing still did not get the attention they deserve (with only few simulators for Edge computing such as iFogSim, EdgeCloudSim).
-
-We introduce PureEdgeSim, a new simulator based on [CloudSim Plus](http://Cloudsimplus.org) that is designed to simulate Cloud, Edge, and Mist computing environments. It allows to evaluate the performance of resources management strategies in terms of network usage, latency, resources utilization, energy consumption, etc. and enables the simulation of several scenarios such as the Internet of Things (IoT), connected vehicles, Mist computing environments (peer-to peer networks such as mobile devices Cloud), and mobile Edge computing. 
    
 ## 2. PureEdgeSim Architecture
 
