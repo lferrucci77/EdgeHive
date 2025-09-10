@@ -1,31 +1,3 @@
-# Please cite it as
-
-**Mechalikh, C., Taktak, H., Moussa, F.: PureEdgeSim: A Simulation Framework for Performance Evaluation of Cloud, Edge and Mist Computing Environments. Computer Science and Information Systems, Vol. 18, No. 1, 43–66. (2021), https://doi.org/10.2298/CSIS200301042M**
-
-Or
-
-Mechalikh, C., Taktak, H., Moussa, F.: PureEdgeSim: A Simulation Toolkit for Performance Evaluation of Cloud, Fog, and Pure Edge Computing Environments. The 2019 International Conference on High Performance Computing & Simulation (2019) 700-707
-
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![Build Status](https://travis-ci.com/CharafeddineMechalikh/PureEdgeSim.svg?branch=master)](https://travis-ci.com/CharafeddineMechalikh/PureEdgeSim) [![Build status](https://ci.appveyor.com/api/projects/status/u6hwmktmbji8utnf?svg=true)](https://ci.appveyor.com/project/CharafeddineMechalikh/pureedgesim) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/25ee278611014a9bb242297480703cf9)](https://www.codacy.com/manual/CharafeddineMechalikh/PureEdgeSim?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=CharafeddineMechalikh/PureEdgeSim&amp;utm_campaign=Badge_Grade) [![Maintainability](https://api.codeclimate.com/v1/badges/a1ffecb5230fc5771b93/maintainability)](https://codeclimate.com/github/CharafeddineMechalikh/PureEdgeSim/maintainability) [![codebeat badge](https://codebeat.co/badges/bbe172a2-1169-4bbe-b6a6-0505631babc6)](https://codebeat.co/projects/github-com-charafeddinemechalikh-pureedgesim-master) [![Maven Central](https://img.shields.io/maven-central/v/com.mechalikh/pureedgesim.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22com.mechalikh%22%20AND%20a:%22pureedgesim%22)
-
-## For more information
-
-**The Fuzzy Decision Tree Based algorithm presented in**
-
-Mechalikh, C., Taktak, H., & Moussa, F. (2020, April). A Fuzzy Decision Tree Based Tasks Orchestration Algorithm for Edge Computing Environments. In International Conference on Advanced Information Networking and Applications (pp. 193-203). Springer, Cham.
-
-is now available [Here](https://github.com/CharafeddineMechalikh/FDT_based_workload_orchestration).
-
-Read the wiki here: [PureEdgeSim WIKI](https://github.com/CharafeddineMechalikh/PureEdgeSim/wiki) 
-
-Other publication using PureEdgeSim can be found [here](https://www.researchgate.net/profile/Charafeddine_Mechalikh/research)
-
-*For any questions, contact me at <charafeddine.mechalikh@gmail.com>*   
-
-## Works that are based on PureEdgeSim and extensions
-
-*   SatEdgeSim: A Toolkit for Modeling and Simulation of Performance Evaluation in Satellite Edge Computing Environments, read more about it [here](https://github.com/wjy491156866/SatEdgeSim).
-
 ## 1. Background
 
 Edge and Mist (Extreme Edge) computing, two emerging computing paradigms that aim to overcome the Cloud computing limitations by bringing its applications at the Edge of the network. Thus, reducing both the latency and the Cloud workload and leading to a more scalable network. Nevertheless, in these distributed environments where many devices need to offload their tasks to one another (either to increase their lifetime or to minimize the task completion delay) many issues such as resources management strategies has to be solved. Instead of testing them on a real distributed system, the simulation makes it possible to evaluate the proposed strategies and algorithms in a repeatable, controllable and cost-effective way before their actual deployment. However, when it comes to simulation tools, Mist computing still did not get the attention they deserve (with only few simulators for Edge computing such as iFogSim, EdgeCloudSim).
@@ -138,16 +110,6 @@ He or She can also solve the registry scalability issue by mirroring the contain
 
 and so on...   
 
-Basically any scenario that involves data centers, servers, or geo-distributed devices.
+Mechalikh, C., Taktak, H., Moussa, F.: PureEdgeSim: A Simulation Toolkit for Performance Evaluation of Cloud, Fog, and Pure Edge Computing Environments. The 2019 International Conference on High Performance Computing & Simulation (2019) 700-707
 
-*   Full control of the simulation environment:
-
-The user can trade-off between simulation duration and its accuracy. 
-
-To decrease the simulation time, the user can also enable parallelism. 
-
-Example of real time charts :
-
-![Real time charts](https://github.com/CharafeddineMechalikh/PureEdgeSim/blob/master/PureEdgeSim/files/real%20time.gif)
-
-Real time analysis of simulation environment
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![Build Status](https://travis-ci.com/CharafeddineMechalikh/PureEdgeSim.svg?branch=master)](https://travis-ci.com/CharafeddineMechalikh/PureEdgeSim) [![Build status](https://ci.appveyor.com/api/projects/status/u6hwmktmbji8utnf?svg=true)](https://ci.appveyor.com/project/CharafeddineMechalikh/pureedgesim) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/25ee278611014a9bb242297480703cf9)](https://www.codacy.com/manual/CharafeddineMechalikh/PureEdgeSim?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=CharafeddineMechalikh/PureEdgeSim&amp;utm_campaign=Badge_Grade) [![Maintainability](https://api.codeclimate.com/v1/badges/a1ffecb5230fc5771b93/maintainability)](https://codeclimate.com/github/CharafeddineMechalikh/PureEdgeSim/maintainability) [![codebeat badge](https://codebeat.co/badges/bbe172a2-1169-4bbe-b6a6-0505631babc6)](https://codebeat.co/projects/github-com-charafeddinemechalikh-pureedgesim-master) [![Maven Central](https://img.shields.io/maven-central/v/com.mechalikh/pureedgesim.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22com.mechalikh%22%20AND%20a:%22pureedgesim%22)
